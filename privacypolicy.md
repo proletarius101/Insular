@@ -1,11 +1,11 @@
 ---
-title: Privacy Policy of Island app
+title: Privacy Policy of Insular app
 ---
 This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
 
 **How do we use the sensitive permissions in our app?**
 
-* PROFILE OWNER & DEVICE-ADMIN: This permission is required to create the separate work profile, which serves as the fundamental functionality of Island. 
+* PROFILE OWNER & DEVICE-ADMIN: This permission is required to create the separate work profile, which serves as the fundamental functionality of Insular. 
 * PACKAGE_USAGE_STATS: This permission is required to correctly recognize the running state of apps.
 
 **What information do we collect from the people that use our app?**
