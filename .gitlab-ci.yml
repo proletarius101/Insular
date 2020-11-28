@@ -24,13 +24,14 @@ test:
   artifacts:
     paths:
       - test # generating site folder to be browsed or download
-  except:
-    - master # the 'test' job will affect all branches expect 'master'
+  only:
+    - gitlab-pages # this job will affect only the 'master' branch
 
 # the 'pages' job will deploy and build your site to the 'public' path
 pages:
   stage: deploy
   script:
+    - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 | xargs -0 sed -i 's/Island/Insular/g'
     - bundle exec jekyll build -d public/
   artifacts:
     paths:
