@@ -1,3 +1,27 @@
 title: Insular
 description: The secret island inside your Android device
-theme: jekyll-yamt
+theme: minimal-mistakes-jekyll
+kramdown:
+  auto_id_prefix: Insular
+  auto_id_stripping: false
+  auto_ids: true
+  entity_output: as_char
+  footnote_backlink: '&#8617;'
+  footnote_backlink_inline: false
+  footnote_nr: 1
+  hard_wrap: false
+  header_offset: 0
+  html_to_native: false
+  input: GFM
+  line_width: 72
+  parse_block_html: false
+  parse_span_html: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter: rouge
+  show_warnings: true
+plugins:
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-relative-links

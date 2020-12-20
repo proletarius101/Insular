@@ -1,23 +1,29 @@
 include:
-  - "https://gitlab.com/accessable-net/gitlab-ci-templates/-/raw/master/scheduled_rebase.yml"
+  - 'https://gitlab.com/accessable-net/gitlab-ci-templates/-/raw/master/scheduled_rebase.yml'
 
 variables:
   UPSTREAM_BRANCH: gh-pages
 
-# requiring the environment of Ruby
-image: ruby:latest
+.base:
+  # requiring the environment of Ruby
+  image: ruby:alpine
+  before_script:
+    - apk add build-base
 
-# add cache to 'vendor' for speeding up builds
-cache:
-  paths: 
-    - vendor/
+    - sed -i -e "s/site.github./site.gitlab./" _layouts/default.html
+    - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 |
+      xargs -0 sed -i 's/Island/Insular/g'
 
-before_script:
-  - bundle config set path 'vendor'
-  - bundle install
+    - bundle config set path 'vendor/bundle'
+    - bundle install
+  # add cache to 'vendor' for speeding up builds
+  cache:
+    paths:
+      - vendor/
 
 # add a job called 'test'
 test:
+  extends: .base
   stage: test
   script:
     - bundle exec jekyll build -d test/
@@ -29,10 +35,12 @@ test:
 
 # the 'pages' job will deploy and build your site to the 'public' path
 pages:
+  extends: .base
   stage: deploy
+  variables:
+    JEKYLL_ENV: production
   script:
-    - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 | xargs -0 sed -i 's/Island/Insular/g'
-    - bundle exec jekyll build -d public/
+    - bundle exec jekyll build -d public/ --incremental
   artifacts:
     paths:
       - public
