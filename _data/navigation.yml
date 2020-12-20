@@ -1,0 +1,13 @@
+main:
+  - title: 'Setup'
+    url: /setup
+  - title: 'ADB'
+    url: /adb
+  - title: 'File Shuttle'
+    url: /files
+  - title: 'FAQ'
+    url: /faq
+  - title: 'APIs'
+    url: /api
+  - title: 'GitLab'
+    url: https://gitlab.com/secure-system/Insular
