@@ -1,5 +1,7 @@
 title: Insular
-description: The secret island inside your Android device
+email: proletarius101@protonmail.com
+description: Isolate your big brother
+gitlab_username: proletarius101
 theme: minimal-mistakes-jekyll
 baseurl: '/Insular'
 kramdown:
@@ -23,6 +25,6 @@ kramdown:
 plugins:
   - jekyll-readme-index
   - jekyll-titles-from-headings
-  - jekyll-default-layout
+  # - jekyll-default-layout
   - jekyll-optional-front-matter
   - jekyll-relative-links

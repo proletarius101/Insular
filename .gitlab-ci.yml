@@ -10,7 +10,6 @@ variables:
   before_script:
     - apk add build-base
 
-    - sed -i -e "s/site.github./site.gitlab./" _layouts/default.html
     - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 |
       xargs -0 sed -i 's/Island/Insular/g'
 
