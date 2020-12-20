@@ -1,6 +1,7 @@
 title: Insular
 description: The secret island inside your Android device
 theme: minimal-mistakes-jekyll
+baseurl: '/Insular'
 kramdown:
   auto_id_prefix: Insular
   auto_id_stripping: false
