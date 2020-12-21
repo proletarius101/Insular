@@ -12,6 +12,9 @@ variables:
 
     - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 |
       xargs -0 sed -i 's/Island/Insular/g'
+    - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 |
+      xargs -0 sed -i
+      's/com.oasisfeng.island(?=[^.])/com.oasisfeng.island.fdroid/g'
 
     - bundle config set path 'vendor/bundle'
     - bundle install
