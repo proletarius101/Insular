@@ -32,4 +32,4 @@ The CAN-SPAM Act is a law that sets the rules for commercial email, establishes 
 
 If there are any questions regarding this privacy policy, you may contact us using the information below.
 
-proletarius101@protonmail.com
+privacy.app@public.oasisfeng.com

@@ -8,14 +8,14 @@ Authorization
 
 First of all, required delegation(s) must be declared in `AndroidManifest.xml` as meta-data: (separated by comma)
 
-`<meta-data android:name="org.securesystem.insular.delegation" android:value="delegation-package-access,-island-delegation-app-ops" />`
+`<meta-data android:name="com.oasisfeng.island.delegation" android:value="delegation-package-access,-island-delegation-app-ops" />`
 
 All standard delegations definded by Android SDK can be declared here, together with non-standard delegations (with vendor prefix, just like [CSS Vendor Prefix](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)). Some standard delegations requiring recent version of Android are also supported in back-port manner by Insular. (see [Invocation](#invocation) section below for the instructions of back-ported delegation)
 
 Before invoking any of the privileged APIs, you can check and request authorization with `RestrictionsManager`:
 
 ```
-    final String TYPE_DELEGATION = "org.securesystem.insular.delegation";
+    final String TYPE_DELEGATION = "com.oasisfeng.island.delegation";
     final String DELEGATION_APP_OPS = "-island-delegation-app-ops";
 
     final RestrictionsManager rm = (RestrictionsManager) context.getSystemService(RESTRICTIONS_SERVICE);
@@ -37,7 +37,7 @@ For standard delegation on supported Android version, corresponding APIs can be 
 For non-standard delegation or standard delegation on not-yet-supported Android version, you can bind to this service of Insular to get the internal binder of delegated system service. The binder returned in `onServiceConnected()` needs to be injected into a system service manager (e.g. `AppOpsManager.mService`) for convenient invocation.
 
 ```
-    final String ACTION_BIND_SYSTEM_SERVICE = "org.securesystem.insular.api.action.BIND_SYSTEM_SERVICE";
+    final String ACTION_BIND_SYSTEM_SERVICE = "com.oasisfeng.island.api.action.BIND_SYSTEM_SERVICE";
 
     final Intent intent = new Intent(ACTION_BIND_SYSTEM_SERVICE, Uri.fromParts("service", Context.APP_OPS_SERVICE, null));
     final List<ResolveInfo> candidates = context.getPackageManager().queryIntentServices(intent, 0);

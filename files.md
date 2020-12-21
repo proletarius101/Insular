@@ -12,6 +12,6 @@ Before the File Shuttle could be activated, a special permission must be granted
 
 Run this command in ADB shell:
 
-`pm grant org.securesystem.insular android.permission.INTERACT_ACROSS_USERS`
+`pm grant com.oasisfeng.island android.permission.INTERACT_ACROSS_USERS`
 
 Then open Insular app and switch to the "Discover" tab, you can activate the File Shuttle there.

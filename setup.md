@@ -35,7 +35,7 @@ Type `adb -d shell` to open ADB shell, and execute the following commands one by
 
    If you got "Error: couldn't create User", execute `setprop fw.max_users 10` first, then retry the command above.
 
-2. `pm path org.securesystem.insular`
+2. `pm path com.oasisfeng.island`
 
    It prints the path of the APK file of Insular on your device. Copy the full path (after "`package:`"), and paste it to replace the `<path>` potion of the following command:
 
@@ -43,8 +43,8 @@ Type `adb -d shell` to open ADB shell, and execute the following commands one by
 
    After the installation, proceed to the activation step: (slightly different by Android version)
 
-4. Android 6+: `dpm set-profile-owner --user <user id> org.securesystem.insular/.IslandDeviceAdminReceiver`</br>
-   Android 5.x: `dpm set-profile-owner org.securesystem.insular/.IslandDeviceAdminReceiver <user id>`
+4. Android 6+: `dpm set-profile-owner --user <user id> com.oasisfeng.island/.IslandDeviceAdminReceiver`</br>
+   Android 5.x: `dpm set-profile-owner com.oasisfeng.island/.IslandDeviceAdminReceiver <user id>`
 
    If you get error message `java.lang.SecurityException: Neither user 2000 nor current process has android.permission.MANAGE_DEVICE_ADMIN`, please review the MIUI-specific steps above in "Preparation".
 
@@ -73,11 +73,11 @@ WARNING: Some **Samsung** users encountered [**boot failure**](https://github.co
 5. Execute the following command in ADB shell. (pick the right one for God / Demigod mode)
 
    Demigod mode:
-   `dpm set-profile-owner --user 0 --name Mainland org.securesystem.insular/.IslandDeviceAdminReceiver`\
-   (For Android 5.x: `dpm set-profile-owner org.securesystem.insular/.IslandDeviceAdminReceiver 0`)
+   `dpm set-profile-owner --user 0 --name Mainland com.oasisfeng.island/.IslandDeviceAdminReceiver`\
+   (For Android 5.x: `dpm set-profile-owner com.oasisfeng.island/.IslandDeviceAdminReceiver 0`)
 
    or God mode:
-   `dpm set-device-owner org.securesystem.insular/.IslandDeviceAdminReceiver`
+   `dpm set-device-owner com.oasisfeng.island/.IslandDeviceAdminReceiver`
 
    If you get error message "... Not allowed to set the device owner because there are already several **users** on the device". make sure all non-primary users are removed. You may use ADB command `pm list users` to reveal all users (including the hidden ones on some devices) and then `pm remove-user <id>` to remove them forcibly.
 
