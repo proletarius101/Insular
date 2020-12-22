@@ -2,7 +2,7 @@ title: Insular
 email: proletarius101@protonmail.com
 description: Isolate your big brother
 gitlab_username: proletarius101
-theme: minimal-mistakes-jekyll
+theme: "just-the-docs"
 baseurl: '/Insular'
 kramdown:
   auto_id_prefix: Insular
