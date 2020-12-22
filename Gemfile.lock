@@ -29,8 +29,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-data (1.1.0)
-      jekyll (>= 3.3, < 5.0.0)
     jekyll-default-layout (0.1.5)
       jekyll (>= 3.0, < 5.0)
     jekyll-feed (0.15.1)
@@ -85,7 +83,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.2.0)
-  jekyll-data
   jekyll-default-layout
   jekyll-feed (~> 0.12)
   jekyll-include-cache
