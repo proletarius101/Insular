@@ -8,12 +8,12 @@ variables:
   # requiring the environment of Ruby
   image: ruby:alpine
   before_script:
-    - apk add build-base
+    - apk add build-base perl
 
-    - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 |
-      xargs -0 sed -i 's/Island/Insular/g'
-    - find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 |
-      xargs -0 sed -i
+    - find . -not \( -name .svn -prune -o -name .git -prune -o -name vendor \)
+      -type f -print0 | xargs -0 sed -i 's/Island/Insular/g'
+    - find . -not \( -name .svn -prune -o -name .git -prune -o -name vendor \)
+      -type f -print0 |xargs -0 perl -pi -e
       's/com.oasisfeng.island(?=[^.])/com.oasisfeng.island.fdroid/g'
 
     - bundle config set path 'vendor/bundle'
