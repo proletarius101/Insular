@@ -5,12 +5,15 @@ What is "Insular"
 
 Isolated app can be frozen on demand, with launcher icon vanish and its background behaviors completely blocked.
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.svg"
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/com.oasisfeng.island.fdroid)
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-zh-cn.svg"
+    style="height: 80px">](https://f-droid.org/packages/com.oasisfeng.island.fdroid)
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-zh-cn.png"
     alt="下载应用，请到 F-Droid"
-    height="80">](https://f-droid.org/packages/com.oasisfeng.island.fdroid)
+    style="height: 80px">](https://f-droid.org/packages/com.oasisfeng.island.fdroid)
+
+
 
 How does it work
 ----------------

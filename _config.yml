@@ -57,7 +57,7 @@ search:
 
 # Aux links for the upper right navigation
 aux_links:
-  'Source code on GitHub':
+  'Source code on GitLab':
     - '//gitlab.com/secure-system/Insular'
   'Get it on F-Droid':
     - '//f-droid.org/packages/com.oasisfeng.island.fdroid'
