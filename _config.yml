@@ -57,8 +57,10 @@ search:
 
 # Aux links for the upper right navigation
 aux_links:
-  'Insular on GitHub':
+  'Source code on GitHub':
     - '//gitlab.com/secure-system/Insular'
+  'Get it on F-Droid':
+    - '//f-droid.org/packages/com.oasisfeng.island.fdroid'
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
