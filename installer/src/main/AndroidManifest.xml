@@ -21,7 +21,7 @@
             <intent-filter> <!-- without MIME type -->
                 <action android:name="android.intent.action.INSTALL_PACKAGE" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.oasisfeng.island" />
+                <category android:name="${applicationId}" />
                 <data android:scheme="file" />
                 <data android:scheme="package" />
                 <data android:scheme="content" />
