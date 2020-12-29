@@ -52,3 +52,4 @@ pages:
       - public
   only:
     - gitlab-pages # this job will affect only the 'master' branch
+  dependencies: [] # prevent downloading from preceeding jobs 
