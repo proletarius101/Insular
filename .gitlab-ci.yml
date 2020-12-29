@@ -11,8 +11,8 @@ variables:
     - apk add build-base perl
 
     - find . -not \( -name .svn -prune -o -name .git -prune -o -name vendor
-      -prune -o -name build \) -type f -print0 | xargs -0 sed -i
-      's/Island/Insular/g'
+      -prune -o -name build \) -type f -print0 | xargs -0 perl -pi -e
+      's/Island(?=[^\w])/Insular/g'
     - find . -not \( -name .svn -prune -o -name .git -prune -o -name vendor
       -prune -o -name build \) -type f -print0 |xargs -0 perl -pi -e
       's/com.oasisfeng.island(?=[^.])/com.oasisfeng.island.fdroid/g'
