@@ -21,6 +21,7 @@ variables:
   UPSTREAM_BRANCH: dev
   VERSION_BUILD_GRADLE_LOCATION: assembly/build.gradle
   VERSION_ANDROID_MANIFEST_LOCATION: assembly/src/main/AndroidManifest.xml
+  VERSION_CHANGELOG_DIR_LOCATION: fastlane/metadata/android/en-US/changelogs
 
 stages:
   - environment
@@ -116,6 +117,8 @@ publishInternal:
     paths:
       - .gradle
       - vendor/bundle
+  only:
+    - tags
 
 .promote_job:
   <<: *only-release
@@ -137,6 +140,8 @@ publishInternal:
     paths:
       - .gradle
       - vendor/bundle
+  only:
+    - tags
 
 promoteAlpha:
   extends: .promote_job

@@ -12,7 +12,7 @@ Install _fastlane_ using
 ```
 [sudo] gem install fastlane -NV
 ```
-or alternatively using `brew cask install fastlane`
+or alternatively using `brew install fastlane`
 
 # Available Actions
 ## Android
@@ -21,11 +21,46 @@ or alternatively using `brew cask install fastlane`
 fastlane android test
 ```
 Runs all the tests
-### android beta
+### android buildFdroidDebugBundle
 ```
-fastlane android beta
+fastlane android buildFdroidDebugBundle
 ```
-Submit a new Beta Build to Crashlytics Beta
+Build bundle for debugging
+### android buildFdroidReleaseBundle
+```
+fastlane android buildFdroidReleaseBundle
+```
+Build bundle for release
+### android buildFdroidDebugApk
+```
+fastlane android buildFdroidDebugApk
+```
+Build apk for debugging
+### android buildFdroidReleaseApk
+```
+fastlane android buildFdroidReleaseApk
+```
+Build apk for release
+### android internal
+```
+fastlane android internal
+```
+Submit a new Internal Build to Play Store
+### android promote_internal_to_alpha
+```
+fastlane android promote_internal_to_alpha
+```
+Promote Internal to Alpha
+### android promote_alpha_to_beta
+```
+fastlane android promote_alpha_to_beta
+```
+Promote Alpha to Beta
+### android promote_beta_to_production
+```
+fastlane android promote_beta_to_production
+```
+Promote Beta to Production
 ### android screenshots
 ```
 fastlane android screenshots
@@ -36,6 +71,16 @@ Build debug and test APK for screenshots
 fastlane android deploy
 ```
 Deploy a new version to the Google Play
+### android pre_release_build
+```
+fastlane android pre_release_build
+```
+Bump version name and version code
+### android post_release_build
+```
+fastlane android post_release_build
+```
+Generate changelogs and tag after incrementing the version
 
 ----
 
