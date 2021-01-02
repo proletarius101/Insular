@@ -34,9 +34,10 @@ stages:
   - production
 
 .build_job:
-  image: circleci/android:api-30
+  image: alpine:latest
   stage: build
   before_script:
+    - cat $VERSION_BUILD_GRADLE_LOCATION
     - base64 -d $KEYSTORE_FILE > android-signing-keystore.jks
     # Prepare dependencies
     - bundle config set path 'vendor/bundle'
@@ -163,6 +164,6 @@ promoteProduction:
   # We only allow production promotion on `master` because
   # it has its own production scoped secret variables
   only:
-    - master
+    - $CI_DEFAULT_BRANCH
   script:
     - bundle exec fastlane promote_beta_to_production version_code:$VERSION_CODE
