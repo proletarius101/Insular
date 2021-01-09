@@ -33,6 +33,7 @@ Common use cases
 - **Use two accounts of the same app parallel.** Clone it into Insular and login the other account inside.
 - **Archive rarely used apps.** Like the first case, keep them frozen until the next time you need it.
 - **Hide your private apps.**
+- **Prohibits USB access.** Don't allow the police scan your phone.
 
 
 Manual setup

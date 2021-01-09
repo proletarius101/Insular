@@ -46,3 +46,12 @@ Why is my (Google) cloud backup disabled in God mode?
   - For Android 5-6, backup is always disabled when God mode is activated.
   - For Android 7.x, backup is disabled if God mod is activated and secondary user (including Insular space) is created.
   - For Android 8.x, backup is always available.
+
+
+Differences from Island
+---
+  - all blobs (gms, crashlytics, etc) are removed to comply with F-droid's policy
+  - Internet access of this app is removed because we just don't need it
+
+  All features are preserved and will be synced upon Island's updates
+
