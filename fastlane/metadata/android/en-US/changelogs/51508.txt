@@ -1,0 +1,79 @@
+<u>10/02/2021 20:45</u>
+Version bump
+Ci: fix post_release_build commit file missing
+Fix: remove modules that seem to be included by mistake
+Update description
+Ci: update fastlane, add changelog
+Fix: revert shareduserid to prevent update error
+Update the description
+Bump version to 5.1.2-a3fe6196
+Update links to insular's
+Bump version to 5.1.2-01dd6170
+Fix: clone rootlessly
+Bump version to 5.1.2-a9e15f6f
+Fix: typo
+Add: ptbr translation
+Ci: don't run release jobs on mrs
+Bump version to 5.1.2-87f1b7e9
+Revert "remove gms metatdata"
+This reverts commit ed3d0f77aaea9f4a0421a398eab8080b216dcc64
+Bump version to 5.1.2-e27c220d
+Add: f-droid badges
+Bump version to 5.1.2-73122450
+Add: link in readme to documentation
+Bump version to 5.1.2-ed3d0f77
+Remove gms metatdata
+Bump version to 5.1.2-42172be8
+Bump version to 5.1.2-a687929c
+Patch versions to build.gradle
+Fix: api compatibility to island
+Fix: some api/component name mismatch
+Fix: grammar
+Move the latest tag to latest commit automatically
+Fix: remove tracker metadata
+Fix https://gitlab.com/fdroid/fdroiddata/-/merge_requests/7898
+Add: detailed description
+Fix: provider name doesn't match the app id
+Fix `bundle install` missing `make`
+Fix aab path and optimize fastlane image size
+Fix uploading aab
+Update fastlane metadata
+Update ruby deps
+Fix ci caching and char encoding
+Fix versionname
+Fix fdroid version injection
+Update icon in fastlane config
+Fix deagle's path
+Workaround lint problem
+Add apk artifacts for direct use
+Upgrade gradle and attatch sha256sum
+Change product name to `insular` in compile time
+Change icon
+Remove unused blobs
+Fix app id suffix and fix ci script
+Add a build flavor for fdroid
+Bump base version code to 45200
+Ci: add caching
+Update ci script
+Fix `width (0) and height (0) cannot be <= 0`
+Use `platformdeprecated` for setup-wizard's `compat` dimension
+Fix: promote jobs
+Signed-off-by: proletarius101 <proletarius101@protonmail.com>
+Ci: switch to fastlane for building and publishing
+Signed-off-by: proletarius101 <proletarius101@protonmail.com>
+Update: fastlane dependency
+Signed-off-by: proletarius101 <proletarius101@protonmail.com>
+Add: .gitignore for ruby and android
+Signed-off-by: proletarius101 <proletarius101@protonmail.com>
+Build: add fastlane support
+Signed-off-by: proletarius101 <proletarius101@protonmail.com>
+Refactor: switch to open source setupwizard lib
+Signed-off-by: proletarius101 <proletarius101@protonmail.com>
+Add license
+Ci: fix wrong upstream branch
+Improv: disable gradle deamon
+Fix `missing sudo`
+Add: gitlab ci script
+Remove internet permission
+Remove analytics, gms, firebase
+
