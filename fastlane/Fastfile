@@ -95,8 +95,9 @@ platform :android do
       ),
       changelog_dir: ENV["VERSION_CHANGELOG_DIR_LOCATION"]
     )
+    git_add(path: ENV["VERSION_CHANGELOG_DIR_LOCATION"])
     git_commit(
-      path: [ENV["VERSION_CHANGELOG_DIR_LOCATION"], ENV["VERSION_BUILD_GRADLE_LOCATION"]], 
+      path: [ENV["VERSION_CHANGELOG_DIR_LOCATION"], ENV["VERSION_BUILD_GRADLE_LOCATION"], 'fastlane/report.xml'], 
       message: "Version Bump",
     )
     add_git_tag(
