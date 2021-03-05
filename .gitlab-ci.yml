@@ -19,6 +19,9 @@ variables:
     - find . -not \( -name .svn -prune -o -name .git -prune -o -name vendor
       -prune -o -name build \) -type f -print0 |xargs -0 perl -pi -e
       's#\/\.#/com.oasisfeng.island.#g'
+    - find . -not \( -name .svn -prune -o -name .git -prune -o -name vendor
+      -prune -o -name build \) -type f -print0 |xargs -0 perl -pi -e
+      's#\$UPSTREAM_NAME#Island#g' 
 
     - bundle config set path 'vendor/bundle'
     - bundle install

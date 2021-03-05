@@ -1,10 +1,10 @@
 Frequently Asked Questions
 ==========================
 
-Compare with Island and Shelter
+Compare with $UPSTREAM_NAME and Shelter
 ---
 
-|                                                            | [Island](https://github.com/oasisfeng/island.git) | [Shelter](https://github.com/PeterCxy/Shelter)                | Insular (based on Island) |
+|                                                            | [$UPSTREAM_NAME](https://github.com/oasisfeng/island.git) | [Shelter](https://github.com/PeterCxy/Shelter)                | Insular (based on $UPSTREAM_NAME) |
 | ---------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------- | ------------------------- |
 | Isolated profile to install Big Brother apps               | Yes                                               | Yes                                                           | Yes                       |
 | **No** proprietary code/components (GMS, Crashlytics, etc) | No                                                | Yes                                                           | Yes                       |
@@ -17,7 +17,7 @@ Compare with Island and Shelter
 | License                                                    | Apache License 2.0                                | DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE                   | Apache License 2.0        |
 |                                                            |                                                   |                                                               |                           |
 
-All features of Island are preserved in Insular and will be synced upon [upstream] updates
+All features of $UPSTREAM_NAME are preserved in Insular and will be synced upon [upstream] updates
 
 Is Island compatible with my device?
 ---
@@ -27,7 +27,6 @@ If you are facing setup failure, malfunction with apps in Island or any other is
 If TestDPC also does not work properly on your device, there's a high chance that your device / ROM is incompatible with "Android for Work", please contact your device vendor or ROM maintainer, mentioning the TestDPC not working issue.
 
 If TestDPC works flawlessly but Island does not, please [file an issue](https://github.com/oasisfeng/island/issues) with logcat attached for us to further analyze. If you are not familiar with logcat, please "Take bug report" in system "Settings - (System) - Developer options" and share the bug-report privately.
-
 
 Error in setup: "Oops! Couldn't set up your work profile. Contact your IT department or try again later."
 ---
@@ -41,7 +40,7 @@ Error in setup: "Custom OS installed" (Samsung-specific)
 
   Samsung enforces extra limitation beyond stock Android, forbidding work profile to be created with custom recovery installed. You can either temporarily revert back to stock recovery and flash custom recovery again after setup, or [setup Island manually](/setup.md).
 
-Failed to clone app with error message:  
+Failed to clone app with error message:
 ---
 
 `"Island cannot clone apps without a proper built-in app market on your device (preferable Google Play Store)"`
@@ -61,6 +60,6 @@ Why is my (Google) cloud backup disabled in God mode?
 
   Due to immature internal restrictions in Android system, backup service may be disabled on older version of Android in God mode. Unfortunately, this cannot be changed unless upgrading your system to Android 8+.
 
-  - For Android 5-6, backup is always disabled when God mode is activated.
-  - For Android 7.x, backup is disabled if God mod is activated and secondary user (including Island space) is created.
-  - For Android 8.x, backup is always available.
+- For Android 5-6, backup is always disabled when God mode is activated.
+- For Android 7.x, backup is disabled if God mod is activated and secondary user (including Island space) is created.
+- For Android 8.x, backup is always available.
