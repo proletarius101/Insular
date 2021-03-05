@@ -1,6 +1,24 @@
 Frequently Asked Questions
 ==========================
 
+Compare with Island and Shelter
+---
+
+|                                                            | [Island](https://github.com/oasisfeng/island.git) | [Shelter](https://github.com/PeterCxy/Shelter)                | Insular (based on Island) |
+| ---------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------- | ------------------------- |
+| Isolated profile to install Big Brother apps               | Yes                                               | Yes                                                           | Yes                       |
+| **No** proprietary code/components (GMS, Crashlytics, etc) | No                                                | Yes                                                           | Yes                       |
+| **No** Internet access                                     | No                                                | Yes                                                           | Yes                       |
+| Good internationalization                                  | No                                                | [Yes](https://weblate.typeblog.net/projects/shelter/shelter/) | No                        |
+| Option to prohibit ADB access                              | Yes                                               | No                                                            | Yes                       |
+| Auto freeze                                                | Yes (with proprietary Greenify)                   | Yes                                                           | No                        |
+| Block Contacts Searching                                   | No                                                | Yes                                                           | No                        |
+| Image Chooser as Fake Camera                               | No                                                | Yes                                                           | No                        |
+| License                                                    | Apache License 2.0                                | DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE                   | Apache License 2.0        |
+|                                                            |                                                   |                                                               |                           |
+
+All features of Island are preserved in Insular and will be synced upon [upstream] updates
+
 Is Insular compatible with my device?
 ---
 
@@ -46,12 +64,3 @@ Why is my (Google) cloud backup disabled in God mode?
   - For Android 5-6, backup is always disabled when God mode is activated.
   - For Android 7.x, backup is disabled if God mod is activated and secondary user (including Insular space) is created.
   - For Android 8.x, backup is always available.
-
-
-Differences from Island
----
-  - all blobs (gms, crashlytics, etc) are removed to comply with F-droid's policy
-  - Internet access of this app is removed because we just don't need it
-
-  All features are preserved and will be synced upon Island's updates
-
